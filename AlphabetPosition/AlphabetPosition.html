@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alphabet Position</title>
+    <!-- https://www.codewars.com/kata/546f922b54af40e1e90001da -->
+    <script>
+        function alphabetPosition(text) {
+            let result = [];
+
+            for (let i = 0; i <= text.length; i++ ) {
+                let code = text.charCodeAt(i);
+                if (code >= 65 && code <= 90) {
+                    result += text.charCodeAt(i) - 'A'.charCodeAt(0) + 1;
+                    result += " ";
+                } else if (code >= 97 && code <= 122) {
+                    result += text.charCodeAt(i) - 'a'.charCodeAt(0) + 1;
+                    result += " ";
+                } else {
+                    continue;
+                }
+            }
+
+            return result.toString().trim();
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
