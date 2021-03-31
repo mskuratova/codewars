@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Categorize New Member</title>
+    <!-- https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa -->
+    <script>
+        function openOrSenior(data){
+            for (let i = 0; i < data.length; i++ ) {
+                let arr = data[i];
+                if (arr[0] >= 55 && arr[1] >7) {
+                    data[i] = 'Senior';
+                }
+                else {data[i]= 'Open';}
+            }
+            return data;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
