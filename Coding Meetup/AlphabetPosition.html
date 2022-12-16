@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alphabet Position</title>
+    <!-- https://www.codewars.com/kata/546f922b54af40e1e90001da -->
+    <script>
+        let list1 = [
+            { firstName: 'Daniel', lastName: 'J.', country: 'Aruba', continent: 'Americas', age: 42, language: 'JavaScript' },
+            { firstName: 'Kseniya', lastName: 'T.', country: 'Belarus', continent: 'Europe', age: 22, language: 'JavaScript' },
+            { firstName: 'Hanna', lastName: 'L.', country: 'Hungary', continent: 'Europe', age: 65, language: 'JavaScript' },
+        ];
+
+        function isSameLanguage(list) {
+            // thank you for checking out the Coding Meetup kata :)
+            let lang = list[0].language
+            for (let i = 1; i < list.length; i++) {
+                if (list[i].language === lang) {
+                    return true
+                }
+                return false
+            }
+        }
+
+      //  console.log(isSameLanguage(list1))
+
+        function total(num){
+            // TODO: complete me
+            let resalt = 0
+            for (let i = 0; i <= num; i++ ){
+                resalt += i
+            }
+            return resalt
+        }
+
+        console.log(total(10))
+
+        function removeA(str) {
+            let find = 'a';
+            let re = new RegExp(find, 'g');
+            str = str.replace( re , '' )
+            return str
+
+           // let a = 'a'
+           //  let resalt = str.replace(/a, '')
+           //  return resalt
+
+        }
+        console.log(removeA("Healaaalaoaa!"))
+
+        var wholeGroup = { Leonard: 'Married',
+            Penny: 'Married',
+            Howard: 'Married',
+            Bernadette: 'Married',
+            Sheldon: 'In a relationship',
+            Amy: 'In a relationship',
+            Raj: 'Single' }
+
+        function missionImpossible(obj){
+            obj.Raj= 'In a relationship'
+            return obj
+
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

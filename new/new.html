@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // let str = "C Is AlIvE!"
+  // function swapVowelCase(str) {
+  //   let result = str.split('');
+  //
+  //   for (let index = 0; index < result.length; ++index) {
+  //     if (isLowerCaseVowel(result[index])) {
+  //       result[index] = result[index].toUpperCase();
+  //     } else if (isUpperCaseVowel(result[index])) {
+  //       result[index] = result[index].toLowerCase();
+  //     }
+  //   }
+  //
+  //   return result.join('');
+  // }
+  //
+  // function isLowerCaseVowel(str) {
+  //   let vowelLowerCase = ['a', 'e', 'o', 'u', 'i'];
+  //
+  //   return vowelLowerCase.some(e => {
+  //     if (e === str) {
+  //       return true;
+  //     }
+  //   });
+  // }
+  //
+  // function isUpperCaseVowel(str) {
+  //   let vowelUpperCase = ['A', 'E', 'O', 'U', 'I'];
+  //
+  //   return vowelUpperCase.some(e => {
+  //     if (e === str) {
+  //       return true;
+  //     }
+  //   });
+  // }
+  //
+  // console.log(swapVowelCase(str));
+  //
+  // function fish (arr){
+  //     //Go fish!
+  //     for (let i = 0; i < arr.length-1; i++) {
+  //         const type = typeof arr[0]
+  //         if (typeof arr[i] !== type){arr.splice(i, i-1)};
+  //         // else {arr};
+  //     }
+  //     return arr
+  // };
+
+
+  function fish(arr){
+      let res;
+      for (let i = 0; i < arr.length - 1; i++) {
+          const type = typeof arr[0]
+          if (typeof arr[i] !== type) return arr[i];
+          else res= "no catch"
+      }
+      return res;
+  };
+  console.log(fish([1,1,1,"red herring",1,1,4]))
+  console.log(fish(["red herring","red herring","red herring"]))
+  console.log(fish(["red herring","blue herring","yellow herring"]))
+
+
+
+
+</script>
+
+</body>
+</html>
