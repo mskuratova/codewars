@@ -76,6 +76,16 @@
       }
   }
 
+  const arrCheck = value => {
+      let temp = true
+      for (let i = 0; i < value.length; i++){
+          if ( temp === false ) {return false}
+          if ( Array.isArray(value[i])) {temp = true}
+          else {temp = false}
+      }
+      return temp
+  }
+
 
 </script>
 
