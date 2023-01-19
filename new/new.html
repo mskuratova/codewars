@@ -54,37 +54,46 @@
   // };
 
 
-  function fish(arr){
-      let res;
-      for (let i = 0; i < arr.length - 1; i++) {
-          const type = typeof arr[0]
-          if (typeof arr[i] !== type) return arr[i];
-          else res= "no catch"
-      }
-      return res;
-  };
-  console.log(fish([1,1,1,"red herring",1,1,4]))
-  console.log(fish(["red herring","red herring","red herring"]))
-  console.log(fish(["red herring","blue herring","yellow herring"]))
+  // function fish(arr){
+  //     let res;
+  //     for (let i = 0; i < arr.length - 1; i++) {
+  //         const type = typeof arr[0]
+  //         if (typeof arr[i] !== type) return arr[i];
+  //         else res= "no catch"
+  //     }
+  //     return res;
+  // };
+  // console.log(fish([1,1,1,"red herring",1,1,4]))
+  // console.log(fish(["red herring","red herring","red herring"]))
+  // console.log(fish(["red herring","blue herring","yellow herring"]))
+  //
+  // function flyTime (dist, train, fly) {
+  //     //Happy coding
+  //     if (train === 0) return null
+  //     else {
+  //         const temp = dist/(train*2)
+  //         return fly * temp
+  //     }
+  // }
+  //
+  // const arrCheck = value => {
+  //     let temp = true
+  //     for (let i = 0; i < value.length; i++){
+  //         if ( temp === false ) {return false}
+  //         if ( Array.isArray(value[i])) {temp = true}
+  //         else {temp = false}
+  //     }
+  //     return temp
+  // }
 
-  function flyTime (dist, train, fly) {
-      //Happy coding
-      if (train === 0) return null
-      else {
-          const temp = dist/(train*2)
-          return fly * temp
-      }
+
+  function maskify(cc) {
+       const length = cc.length
+      if (length <= 4) return cc
+      else return '#'.repeat(length-4) + cc.slice(-4)
+
   }
 
-  const arrCheck = value => {
-      let temp = true
-      for (let i = 0; i < value.length; i++){
-          if ( temp === false ) {return false}
-          if ( Array.isArray(value[i])) {temp = true}
-          else {temp = false}
-      }
-      return temp
-  }
 
 
 </script>
